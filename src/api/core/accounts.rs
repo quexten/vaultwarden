@@ -822,10 +822,10 @@ pub async fn _prelogin(data: JsonUpcase<PreloginData>, mut conn: DbConn) -> Json
     };
 
     let result = json!({
-        "Kdf": kdf_type,
-        "KdfIterations": kdf_iter,
-        "KdfMemory": kdf_mem,
-        "KdfParallelism": kdf_para,
+        "kdf": kdf_type,
+        "kdfIterations": kdf_iter,
+        "kdfMemory": kdf_mem,
+        "kdfParallelism": kdf_para,
     });
 
     Json(result)
